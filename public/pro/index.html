@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<body>
+<h1>Pro App</h1>
+<div id="state">Checking access...</div>
+<script>
+fetch('/api/verify-access').then(r=>r.json()).then(d=>{
+  if(!d.ok) location.href='/';
+  document.getElementById('state').innerText='Pro unlocked. Real app.';
+});
+</script>
+</body>
+</html>
