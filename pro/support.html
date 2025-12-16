@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support / Submit · Pro · Lumi Studio</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">🔵 Pro</div>
+  <h1 class="h1">Support / Submit</h1>
+  <div class="card" id="lockedBlock"><p class='p'>WhatsApp: +60168944406 · IG: lumistudio2025</p></div>
+</div>
+<script>
+  if (window.Lumi && !window.Lumi.requireProOrShowGate()) {
+    const b = document.getElementById("lockedBlock");
+    b.style.filter = "blur(8px)";
+    b.style.pointerEvents = "none";
+  }
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="../assets/js/bundle.js"></script>
+  <script>window.Lumi && window.Lumi.mountChrome();</script>
+</body>
+</html>

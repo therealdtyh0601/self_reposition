@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lumi Studio · Hub</title>
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
 </head>
 <body>
   <div id="siteHeader"></div>
@@ -16,52 +15,35 @@
   <h1 class="h1">Build clarity, not noise 🧠✨</h1>
   <p class="p">Emoji-only UI. Fast. No fluff. Free tools + one-time Pro unlock.</p>
   <div class="row">
-    <a class="btn primary" href="/free/" data-i18n="nav.free">…</a>
-    <a class="btn" href="/pro/" data-i18n="cta.unlock">…</a>
-    <a class="btn" href="/legal/disclaimer.html" data-i18n="nav.legal">…</a>
+    <a class="btn primary" href="free/index.html" data-i18n="nav.free">…</a>
+    <a class="btn" href="pro/index.html" data-i18n="cta.unlock">…</a>
+    <a class="btn" href="legal/disclaimer.html" data-i18n="nav.legal">…</a>
   </div>
   <hr class="sep" />
   <div class="grid cols-3">
     <div class="card">
       <div class="h2">🟢 Free</div>
       <p class="p">Try the toolbox. Understand your basics. Share with friends.</p>
-      <a class="btn" href="/free/">Enter Free →</a>
+      <a class="btn" href="free/index.html">Enter Free →</a>
     </div>
     <div class="card">
       <div class="h2">🔵 Pro</div>
       <p class="p">Explain-like-textbook v1. Reports guide. Deeper tools.</p>
-      <a class="btn primary" href="/pro/">Enter Pro →</a>
+      <a class="btn primary" href="pro/index.html">Enter Pro →</a>
     </div>
     <div class="card">
       <div class="h2">🧾 One-time</div>
       <p class="p">RM8.99 unlock on this device (v1). No subscriptions.</p>
-      <a class="btn" href="/success.html">I already paid →</a>
+      <a class="btn" href="success.html">I already paid →</a>
     </div>
   </div>
-</div>
-
-<div class="card" style="margin-top:14px">
-  <div class="h2">🧭 How it works</div>
-  <div class="grid cols-2">
-    <div class="card">
-      <div class="pill">1</div>
-      <p class="p">Start in Free. Explore tools. Build a baseline.</p>
-    </div>
-    <div class="card">
-      <div class="pill">2</div>
-      <p class="p">Unlock Pro once. Get the “why” + deeper interpretation.</p>
-    </div>
-  </div>
-  <p class="small">Tip: set language in the top-right 🌐</p>
 </div>
 
   </div>
   <div id="siteFooter"></div>
   <div class="toast" id="toast"></div>
 
-  <script type="module">
-    import { mountChrome } from "/assets/js/app.js";
-    mountChrome({ current: "/" });
-  </script>
+  <script src="assets/js/bundle.js"></script>
+  <script>window.Lumi && window.Lumi.mountChrome();</script>
 </body>
 </html>

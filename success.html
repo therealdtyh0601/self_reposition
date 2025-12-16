@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Unlocked · Lumi Studio</title>
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
 </head>
 <body>
   <div id="siteHeader"></div>
@@ -16,15 +15,13 @@
   <h1 class="h1" data-i18n="success.title">…</h1>
   <p class="p" data-i18n="success.body">…</p>
   <div class="row" style="justify-content:center">
-    <a class="btn primary" href="/pro/">Go to Pro →</a>
-    <a class="btn" href="/free/">Back to Free →</a>
+    <a class="btn primary" href="pro/index.html">Go to Pro →</a>
+    <a class="btn" href="free/index.html">Back to Free →</a>
   </div>
   <hr class="sep" />
-  <p class="small">If you didn’t come from Stripe checkout, this still unlocks locally (v1).</p>
+  <p class="small">Dev: this page sets local unlock flags (v1).</p>
 </div>
-
-<script type="module">
-  // v1 local unlock
+<script>
   localStorage.setItem("lumi_tier","pro");
   localStorage.setItem("lumi_pro_unlocked","true");
 </script>
@@ -33,9 +30,7 @@
   <div id="siteFooter"></div>
   <div class="toast" id="toast"></div>
 
-  <script type="module">
-    import { mountChrome } from "/assets/js/app.js";
-    mountChrome({ current: "/pro/" });
-  </script>
+  <script src="assets/js/bundle.js"></script>
+  <script>window.Lumi && window.Lumi.mountChrome();</script>
 </body>
 </html>
