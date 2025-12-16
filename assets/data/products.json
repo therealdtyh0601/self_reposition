@@ -1,0 +1,90 @@
+{
+  "brand": "Lumi Studio",
+  "price_label": "RM8.99 one-time",
+  "stripe_payment_link": "https://buy.stripe.com/aFa14m7pq1IfbeuafW6Na00",
+  "support_whatsapp": "+60168944406",
+  "tiers": {
+    "free": {
+      "name": "Free",
+      "emoji": "🟢",
+      "description": "Try tools + learn the basics"
+    },
+    "pro": {
+      "name": "Pro",
+      "emoji": "🔵",
+      "description": "Explain-like-textbook v1 + deeper tools"
+    }
+  },
+  "tools": [
+    {
+      "tier": "free",
+      "title": "Tianji Toolbox",
+      "emoji": "🧰",
+      "href": "/free/tj-toolbox.html",
+      "desc": "Core toolkit (free)"
+    },
+    {
+      "tier": "free",
+      "title": "HouseCheck",
+      "emoji": "🏠",
+      "href": "/free/tj-housecheck.html",
+      "desc": "Space / property check (free)"
+    },
+    {
+      "tier": "free",
+      "title": "BodyCheck",
+      "emoji": "🧍",
+      "href": "/free/tj-bodycheck.html",
+      "desc": "Body rhythm module (free)"
+    },
+    {
+      "tier": "free",
+      "title": "Quote Wheel",
+      "emoji": "🎡",
+      "href": "/free/quote-wheel.html",
+      "desc": "Spin & get quotes (free)"
+    },
+    {
+      "tier": "free",
+      "title": "Resources",
+      "emoji": "📚",
+      "href": "/free/resources.html",
+      "desc": "Library & references"
+    },
+    {
+      "tier": "free",
+      "title": "FAQ",
+      "emoji": "❓",
+      "href": "/free/faq.html",
+      "desc": "Common questions"
+    },
+    {
+      "tier": "pro",
+      "title": "Pro Hub (Textbook v1)",
+      "emoji": "📘",
+      "href": "/pro/index.html",
+      "desc": "Deep explanation + how to interpret"
+    },
+    {
+      "tier": "pro",
+      "title": "Reports",
+      "emoji": "🧾",
+      "href": "/pro/reports.html",
+      "desc": "1-pager / 3-pager report guide"
+    },
+    {
+      "tier": "pro",
+      "title": "Pro Tools",
+      "emoji": "🛠️",
+      "href": "/pro/tools.html",
+      "desc": "Advanced tools collection"
+    },
+    {
+      "tier": "pro",
+      "title": "Support",
+      "emoji": "💬",
+      "href": "/pro/support.html",
+      "desc": "Submit details + get help"
+    }
+  ]
+}

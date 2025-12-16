@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Hub · Lumi Studio</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">🟢 Free Hub</div>
+  <h1 class="h1">Free tools menu 🧰</h1>
+  <p class="p">Everything here is open. Explore, test, and share.</p>
+  <div class="grid cols-3" id="toolGrid"></div>
+</div>
+
+<script type="module">
+  import { mountChrome } from "/assets/js/app.js";
+  import { applyI18n } from "/assets/js/i18n.js";
+
+  mountChrome({ current: "/free/" });
+
+  const cfg = await (await fetch("/assets/data/products.json", { cache: "no-store" })).json();
+  const tools = cfg.tools.filter(t => t.tier === "free");
+  const grid = document.getElementById("toolGrid");
+  grid.innerHTML = tools.map(t => `
+    <a class="card" href="${t.href}">
+      <div class="h2">${t.emoji} ${t.title}</div>
+      <p class="p">${t.desc}</p>
+      <div class="small">Open →</div>
+    </a>
+  `).join("");
+  applyI18n(document);
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/free/" });
+  </script>
+</body>
+</html>

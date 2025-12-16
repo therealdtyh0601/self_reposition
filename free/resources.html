@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources · Free · Lumi Studio</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">📚 Free</div>
+  <h1 class="h1">Resources</h1>
+  <p class="p">A simple library page. Add links, PDFs, study notes, or glossary here.</p>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="h2">🗂️ Suggested sections</div>
+      <ul style="margin:0; padding-left:18px">
+        <li class="p">Glossary (terms)</li>
+        <li class="p">Method notes (how to use tools)</li>
+        <li class="p">References / reading list</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="h2">🧩 Quick actions</div>
+      <div class="row">
+        <a class="btn" href="/pro/">🔵 Go Pro</a>
+        <a class="btn" href="/legal/disclaimer.html">⚖️ Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { mountChrome } from "/assets/js/app.js";
+  mountChrome({ current: "/free/" });
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/free/" });
+  </script>
+</body>
+</html>

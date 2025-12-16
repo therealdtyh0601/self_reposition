@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reports · Pro · Lumi Studio</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">🧾 Pro</div>
+  <h1 class="h1">Reports</h1>
+  <p class="p">Clear explanation of your paid deliverables (1-pager / 3-pager).</p>
+  <div class="grid cols-2" id="lockedBlock">
+    <div class="card">
+      <div class="h2">📄 1-pager</div>
+      <p class="p">Fast clarity: key theme + 3 actions.</p>
+    </div>
+    <div class="card">
+      <div class="h2">📑 3-pager</div>
+      <p class="p">Deeper mapping: theme + timeline + risk / opportunity.</p>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { mountChrome } from "/assets/js/app.js";
+  import { requireProOrShowGate } from "/assets/js/gate.js";
+  mountChrome({ current: "/pro/" });
+  const ok = requireProOrShowGate();
+  if (!ok) {
+    const b = document.getElementById("lockedBlock");
+    b.style.filter = "blur(8px)";
+    b.style.pointerEvents = "none";
+  }
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/pro/" });
+  </script>
+</body>
+</html>

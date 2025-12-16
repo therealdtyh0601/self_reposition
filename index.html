@@ -1,29 +1,67 @@
-
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Lumi</title>
-<style>
-body { font-family: system-ui, -apple-system, BlinkMacSystemFont; max-width: 760px; margin: auto; padding: 1rem; }
-header, footer { opacity: .8; margin-bottom: 1.2rem; }
-.locked { filter: blur(6px); pointer-events: none; user-select: none; }
-button { padding: .6rem 1rem; margin-top: .8rem; }
-small { opacity: .7; }
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumi Studio · Hub</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
 </head>
 <body>
-<header>
-<h1>🧭 Lumi</h1>
-<nav>
-<a href="/index.html">Home</a> ·
-<a href="/free/stage.html">Free</a> ·
-<a href="/pro/positioning-map.html">Pro</a>
-</nav>
-</header>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">🧿 Lumi Studio · <span class="kbd">Free</span> → <span class="kbd">Pro</span></div>
+  <h1 class="h1">Build clarity, not noise 🧠✨</h1>
+  <p class="p">Emoji-only UI. Fast. No fluff. Free tools + one-time Pro unlock.</p>
+  <div class="row">
+    <a class="btn primary" href="/free/" data-i18n="nav.free">…</a>
+    <a class="btn" href="/pro/" data-i18n="cta.unlock">…</a>
+    <a class="btn" href="/legal/disclaimer.html" data-i18n="nav.legal">…</a>
+  </div>
+  <hr class="sep" />
+  <div class="grid cols-3">
+    <div class="card">
+      <div class="h2">🟢 Free</div>
+      <p class="p">Try the toolbox. Understand your basics. Share with friends.</p>
+      <a class="btn" href="/free/">Enter Free →</a>
+    </div>
+    <div class="card">
+      <div class="h2">🔵 Pro</div>
+      <p class="p">Explain-like-textbook v1. Reports guide. Deeper tools.</p>
+      <a class="btn primary" href="/pro/">Enter Pro →</a>
+    </div>
+    <div class="card">
+      <div class="h2">🧾 One-time</div>
+      <p class="p">RM8.99 unlock on this device (v1). No subscriptions.</p>
+      <a class="btn" href="/success.html">I already paid →</a>
+    </div>
+  </div>
+</div>
 
-<h2>Clarity before choice ✨</h2>
-<p>Understand where you are, before deciding where to go.</p>
-<a href="/free/stage.html">🧭 Start Free</a>
+<div class="card" style="margin-top:14px">
+  <div class="h2">🧭 How it works</div>
+  <div class="grid cols-2">
+    <div class="card">
+      <div class="pill">1</div>
+      <p class="p">Start in Free. Explore tools. Build a baseline.</p>
+    </div>
+    <div class="card">
+      <div class="pill">2</div>
+      <p class="p">Unlock Pro once. Get the “why” + deeper interpretation.</p>
+    </div>
+  </div>
+  <p class="small">Tip: set language in the top-right 🌐</p>
+</div>
 
-<footer>
-<p>🧠 Lumi is a self-positioning tool, not prediction.</p>
-<p>💳 Payments are processed securely by Stripe.</p>
-</footer>
-</body></html>
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/" });
+  </script>
+</body>
+</html>

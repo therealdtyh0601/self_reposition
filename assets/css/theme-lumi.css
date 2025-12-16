@@ -1,0 +1,36 @@
+/* Lumi theme tweaks (kept minimal on purpose) */
+header.site{
+  position:sticky; top:0; z-index:20;
+  backdrop-filter: blur(14px);
+  background: linear-gradient(180deg, rgba(7,20,47,.85), rgba(7,20,47,.55));
+  border-bottom:1px solid var(--line);
+}
+header .bar{
+  max-width:var(--max); margin:0 auto; padding:14px 22px;
+  display:flex; justify-content:space-between; align-items:center; gap:12px;
+}
+.brand{
+  display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;
+}
+.brand .logo{font-size:20px}
+nav.links{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+nav.links a{
+  padding:8px 10px; border-radius:12px; border:1px solid transparent; color:var(--muted)
+}
+nav.links a:hover{border-color:var(--line); background:rgba(255,255,255,.04); color:var(--text)}
+nav .lang{
+  display:flex; gap:8px; align-items:center;
+}
+select.langsel{
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line);
+  border-radius:12px;
+  color:var(--text);
+  padding:8px 10px;
+}
+footer.site{
+  border-top:1px solid var(--line);
+  margin-top:24px;
+  padding:18px 0 28px;
+  color:var(--muted);
+}

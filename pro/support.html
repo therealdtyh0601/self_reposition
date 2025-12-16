@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support · Pro · Lumi Studio</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card">
+  <div class="pill">💬 Pro</div>
+  <h1 class="h1">Support / Submit</h1>
+  <p class="p">v1: simple submission instructions. Replace with Google Form / Notion form later.</p>
+
+  <div class="grid cols-2" id="lockedBlock">
+    <div class="card">
+      <div class="h2">🧾 What to send</div>
+      <ul style="margin:0; padding-left:18px">
+        <li class="p">Name / nickname</li>
+        <li class="p">Birth date + time + place</li>
+        <li class="p">Your question (one focus)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="h2">📲 Contact</div>
+      <p class="p">WhatsApp: +60168944406</p>
+      <p class="p">IG: lumistudio2025</p>
+      <div class="row">
+        <a class="btn primary" href="/success.html">✅ I paid already</a>
+        <a class="btn" href="/free/">🟢 Back Free</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { mountChrome } from "/assets/js/app.js";
+  import { requireProOrShowGate } from "/assets/js/gate.js";
+  mountChrome({ current: "/pro/" });
+  const ok = requireProOrShowGate();
+  if (!ok) {
+    const b = document.getElementById("lockedBlock");
+    b.style.filter = "blur(8px)";
+    b.style.pointerEvents = "none";
+  }
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/pro/" });
+  </script>
+</body>
+</html>

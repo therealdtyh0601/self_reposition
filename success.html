@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unlocked · Lumi Studio</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/theme-lumi.css" />
+</head>
+<body>
+  <div id="siteHeader"></div>
+  <div class="wrap">
+    
+<div class="card center">
+  <div class="pill">✅ <span data-i18n="success.title">…</span></div>
+  <h1 class="h1" data-i18n="success.title">…</h1>
+  <p class="p" data-i18n="success.body">…</p>
+  <div class="row" style="justify-content:center">
+    <a class="btn primary" href="/pro/">Go to Pro →</a>
+    <a class="btn" href="/free/">Back to Free →</a>
+  </div>
+  <hr class="sep" />
+  <p class="small">If you didn’t come from Stripe checkout, this still unlocks locally (v1).</p>
+</div>
+
+<script type="module">
+  // v1 local unlock
+  localStorage.setItem("lumi_tier","pro");
+  localStorage.setItem("lumi_pro_unlocked","true");
+</script>
+
+  </div>
+  <div id="siteFooter"></div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module">
+    import { mountChrome } from "/assets/js/app.js";
+    mountChrome({ current: "/pro/" });
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "nav.home": "Home",
+  "nav.free": "Free",
+  "nav.pro": "Pro",
+  "nav.legal": "Legal",
+  "cta.unlock": "Unlock Pro",
+  "cta.back_free": "Back to Free",
+  "gate.title": "Pro is locked 🔒",
+  "gate.body": "This page is part of Pro. Unlock once, use anytime on this device.",
+  "gate.btn": "Unlock Pro (RM8.99)",
+  "success.title": "Unlocked ✅",
+  "success.body": "Pro is now unlocked on this device. You can start using Pro pages.",
+  "footer.note": "Emoji-only UI · Built for speed · GitHub Pages friendly"
+}
