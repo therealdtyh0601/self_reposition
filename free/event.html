@@ -1,5 +1,5 @@
 
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>🧭 当前人生阶段定位</title>
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>🚦 事件态势感知</title>
 <style>
 body { font-family: system-ui; max-width: 760px; margin: auto; padding: 1rem; }
 header, footer { opacity: .8; margin-bottom: 1.2rem; }
@@ -16,14 +16,14 @@ a { display: inline-block; margin-top: 1rem; }
 </nav>
 </header>
 
-<h2>🧭 当前人生阶段定位</h2>
+<h2>🚦 事件态势感知</h2>
 <div id="output"></div>
 <a href="/pro/positioning-map.html">🔍 为什么会这样？</a>
 <script>
 fetch("/data/free-outputs.json")
 .then(r=>r.json())
 .then(d=>{
-  const arr = d["stage"];
+  const arr = d["event"];
   document.getElementById("output").innerText =
     arr[Math.floor(Math.random()*arr.length)];
 });
