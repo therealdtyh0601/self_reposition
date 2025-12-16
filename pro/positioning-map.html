@@ -1,45 +1,54 @@
 
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>🧭 三层定位图</title>
-
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>🧭 三层定位图（Explanation v1）</title>
 <style>
-body { font-family: system-ui, -apple-system, BlinkMacSystemFont; max-width: 760px; margin: auto; padding: 1rem; }
+body { font-family: system-ui; max-width: 780px; margin: auto; padding: 1rem; line-height: 1.6; }
 header, footer { opacity: .8; margin-bottom: 1.2rem; }
-.locked { filter: blur(6px); pointer-events: none; user-select: none; }
-button { padding: .6rem 1rem; margin-top: .8rem; }
-small { opacity: .7; }
+.locked { filter: blur(6px); pointer-events: none; }
+section { margin-bottom: 1.5rem; }
+h3 { margin-top: 1rem; }
 </style>
-<script src="/engine/pro-access.js"></script></head>
+</head>
 <body>
+
 <header>
-<h1>🧭 Lumi</h1>
+<h1>🧭 Lumi · Pro</h1>
 <nav>
 <a href="/index.html">Home</a> ·
-<a href="/free/stage.html">Free</a> ·
-<a href="/pro/positioning-map.html">Pro</a>
+<a href="/free/stage.html">Free</a>
 </nav>
 </header>
 
-<h2>🧭 三层定位图</h2>
-<div id="proContent" class="locked">
-<p><strong>解释层：</strong></p>
-<p>你当前的状态来自时间阶段、心理负荷与环境互动的叠加。</p>
-<p>当这三者不同步时，努力本身会变得耗能。</p>
-<p>Pro 的作用不是给答案，而是标出低摩擦区间。</p>
+<h2>🧭 三层定位图（Explanation v1）</h2>
+<div class="locked">
+
+<section>
+<h3>这一页在解释什么？</h3>
+<p>三层定位图用来说明：你现在的状态，并不是单一原因造成的，而是<strong>时间、心理负荷、环境互动</strong>同时作用的结果。</p>
+</section>
+<section>
+<h3>第一层：时间位置</h3>
+<p>时间位置不是年份好坏，而是你正处在人生推进中的哪个段落。不同段落，适合的动作不同。</p>
+</section>
+<section>
+<h3>第二层：心理负荷</h3>
+<p>当心理负荷过高时，即使方向正确，行动也会变得耗能。</p>
+</section>
+<section>
+<h3>第三层：环境互动</h3>
+<p>环境不是背景，而是参与者。不匹配的环境会放大消耗。</p>
+</section>
+<section>
+<h3>如何使用这个解释？</h3>
+<p>这一页的作用，是帮你区分：哪些问题来自阶段，哪些来自选择。</p>
+</section>
+
 </div>
-<div id="unlockBox">
-<p>这是解释层，不是新的结论。</p>
+<p><strong>这是解释层。</strong></p>
 <button onclick="location.href='https://buy.stripe.com/aFa14m7pq1IfbeuafW6Na00'">🔓 解锁 Pro · MYR 8.99</button>
-<small>一次性解锁 · 不自动续费</small>
-</div>
-<script>
-if (isProUnlocked()) {
-  document.getElementById("proContent").classList.remove("locked");
-  document.getElementById("unlockBox").style.display="none";
-}
-</script>
 
 <footer>
-<p>🧠 Lumi is a self-positioning tool, not prediction.</p>
-<p>💳 Payments are processed securely by Stripe.</p>
+<p>🧠 Pro 是解释层，不是预测层。</p>
 </footer>
+
 </body></html>
